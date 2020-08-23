@@ -16,7 +16,7 @@ body, html {
     z-index: 1;
     display: flex;
     width: 100%;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
 }
 .navbar ul {
     padding: 0;
@@ -71,9 +71,6 @@ body, html {
     position: absolute;
     top: 50%;
     width: 100%;
-    /* margin-left: -50px; */
-    /* top: 50%; */
-    /* margin-top: -50px; */
     margin-right: auto;
     text-align: center;
     color: #000;
@@ -86,4 +83,40 @@ body, html {
 }
 .title .border {
     color: #fff;
+}
+/* section styles */
+.section {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section div {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.section-heading {
+    display: block;
+    margin: 5px;
+    padding: 10px 0 10px 25px;
+    text-align: left;
+    font-size: 2.75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.section-text {
+    padding: 0 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.light {
+    background-color: #fff;
+}
+.pink {
+    background-color: #fbc7b7;
+    /* color: #000; */
 }
