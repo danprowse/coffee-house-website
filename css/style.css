@@ -121,7 +121,7 @@ body, html {
 .section-heading {
     display: block;
     margin: 5px 0 5px 50px;
-    padding: 10px 0 10px 25px;
+    padding: 10px 0 10px;
     text-align: left;
     font-size: 3.5rem;
     text-transform: uppercase;
@@ -133,7 +133,7 @@ body, html {
     max-width: 80%;
     /* padding: 0 50px; */
     margin: 0 auto;
-    padding: 10px;
+    padding: 5px;
     font-size: 0.9rem;
     line-height: 2rem;
 }
@@ -147,7 +147,7 @@ body, html {
 .parallax {
     background-image: url('/img/coffee-one.jpg');
     position: relative;
-    opacity: 0.7;
+    opacity: 0.8    ;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -171,7 +171,6 @@ body, html {
     letter-spacing: 8px;
     text-transform: uppercase;
     font-weight: 600;
-    /* background-color: rgba(251, 199, 183, 0.3); */
 }
 footer {
     height: 50vh;
@@ -201,4 +200,41 @@ footer p {
 }
 footer ul li span {
     color: white;
+}
+
+@media screen and (max-width:900px) {
+    .section-heading {
+        font-size: 3rem;
+    }
+    .section-text, footer {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width:800px) {
+    .section {
+        flex-direction: column;
+    }
+    .section-two div.light, .section-one div.light {
+        display: flex;
+        flex-direction: row;
+        max-height: 100px !important;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .section-heading {
+        flex: 1;
+        height: 50px;
+    }
+    .section.section-two {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-two div.light .section-heading, .section-one div.light .section-heading {
+        margin: 0 10px;
+        font-size: 2rem;
+        /* padding: 0; */
+        width: auto;
+    }
 }
