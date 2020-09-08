@@ -9,7 +9,7 @@ body, html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: 1.8em;
-    color: #666;
+    color: #333; 
 }
 .navbar {
     position: fixed;
@@ -29,16 +29,11 @@ body, html {
     align-items: center;
 }
 .navbar ul li {
-    /* margin: 0 0.75rem;
-    padding: 1rem; */
     min-width: 100px;
     text-align: center;
     font-size: 0.8rem;
     font-weight: 600;
 }
-.navbar ul li:nth-child(2) {
-    /* padding: 0; */
-} 
 .navbar ul li a {
     text-decoration: none;
     text-transform: uppercase;
@@ -49,19 +44,12 @@ body, html {
     height: 60px;
     padding-top: 5px;
 }
-
 .showcase-parallax {
     position: relative;
     opacity: 0.7;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
-    /* to enable effect */
-    /* 
-        fixed = parallax
-        scroll = normal
-    */
     background-attachment: fixed;
 }
 .showcase-parallax {
@@ -78,7 +66,7 @@ body, html {
     text-align: center;
     color: #000;
     font-size: 3rem;
-    letter-spacing: 8px;
+    letter-spacing: 5px;
     text-transform: uppercase;
     padding: 20px;
     font-weight: 500;
@@ -116,7 +104,6 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
 }
 .section-heading {
     display: block;
@@ -126,15 +113,14 @@ body, html {
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 600;
-    max-width: 80%;
+    max-width: 80%; 
     line-height: 2rem;
 }
-.section-text {
+p.section-text {
     max-width: 80%;
-    /* padding: 0 50px; */
     margin: 0 auto;
     padding: 5px;
-    font-size: 0.9rem;
+    font-size: 1em;
     line-height: 2rem;
 }
 .light {
@@ -142,7 +128,6 @@ body, html {
 }
 .pink {
     background-color: #fbc7b7;
-    /* color: #000; */
 }
 .parallax {
     background-image: url('/img/coffee-one.jpg');
@@ -151,12 +136,6 @@ body, html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
-    /* to enable effect */
-    /* 
-        fixed = parallax
-        scroll = normal
-    */
     background-attachment: fixed;
     height: 75vh;
 }
@@ -177,7 +156,6 @@ footer {
     background-color: #333;
     color: #666;
     padding: 50px;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,11 +184,17 @@ footer ul li span {
     .section-heading {
         font-size: 3rem;
     }
-    .section-text, footer {
-        font-size: 0.8rem;
+    p.section-text, footer {
+        font-size: 0.8333rem;
     }
 }
 @media screen and (max-width:800px) {
+    .showcase-parallax .title {
+        font-size: 2rem;
+    }
+    .showcase-parallax .tagline {
+        font-size: 1.1rem;
+    }
     .section {
         flex-direction: column;
     }
@@ -231,10 +215,43 @@ footer ul li span {
         justify-content: center;
         align-items: center;
     }
-    .section-two div.light .section-heading, .section-one div.light .section-heading {
+    div.light .section-heading {
         margin: 0 10px;
-        font-size: 2rem;
+        font-size: 1.75rem;
         /* padding: 0; */
         width: auto;
+    }
+}
+@media screen and (max-width: 550px) {
+    .parallax-1, .parallax-2 {
+        background-attachment: scroll;
+    }
+    .showcase-parallax .tagline {
+        display: none;
+    }
+    div.light span.section-heading {
+        font-size: 1rem;
+        padding: 0;
+        margin: 0 2.5px;
+        height: auto;
+    }
+    div.pink {
+        justify-content: center;
+        align-items: center;
+    }
+    p.section-text {
+        margin: 0;
+        padding: 5px 0;
+        max-width: 95%;
+        text-align: center;
+        font-size: 0.75rem;
+    }
+    .parallax div.qoute {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    footer {
+        padding: 1rem;
+        text-align: center;
     }
 }
