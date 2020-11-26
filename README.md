@@ -27,4 +27,4 @@ Not currently accepting contributions but feel free to use and reference the cod
 ## License
 The code in this project is licensed under MIT license.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/danprowse/coffee-house-website/blob/master/LISENCE)
